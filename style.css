@@ -35,13 +35,13 @@ body {
     /* background-color: rgb(109, 109, 109); */
     display: flex;
     flex-direction: column;
-    gap: 10%
 }
 
 .display {
     background-color: aliceblue;
     border: 1px solid black;
     flex: .20;
+    border-bottom: none;
 }
 
 .buttons {
@@ -49,6 +49,7 @@ body {
     flex: .80;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 10%;
 }
 
 .button {
@@ -60,4 +61,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.sign-display {
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-top: none;
+    flex: .10;
+    margin: 0 0 auto;
+    text-align: right;
 }
