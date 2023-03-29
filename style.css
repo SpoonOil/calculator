@@ -4,7 +4,7 @@ html {
 
 body {
     margin: 0;
-    background: skyblue;
+    background: rgb(33, 47, 87);
     height: 100%;
     width: 100%;
     display: flex;
@@ -20,41 +20,59 @@ body {
 }
 
 .calculator {
-    background-color: white;
-    width: 50%;
+    background-color: rgb(204, 204, 216);
     height: 50%;
+    width: 30%;
     display: flex;
-    align-items: center;
+    align-items: space-between;
+    padding: 22px;
     justify-content: center;
     border-radius: 20px;
 }
 
 .interface {
-    width: 85%;
-    height: 85%;
+    width: 100%;
+    height: 100%;
     /* background-color: rgb(109, 109, 109); */
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .display {
     background-color: aliceblue;
-    border: 1px solid black;
+    border: 1px solid rgb(170, 160, 160);
+    border-radius: 5px;
     flex: .20;
     border-bottom: none;
+    font-size: 1.5em;
+    padding: 5px;
 }
 
+
+.sign-display {
+    background-color: aliceblue;
+    border: 1px solid rgb(170, 160, 160);
+    border-top: none;
+    flex: .10 0 27px;
+    margin: 0 0 auto;
+    text-align: right;
+    font-size: 1.5em;
+    padding: 5px;
+}
 .buttons {
     /* background-color: gray; */
-    flex: .80;
+    flex: 1;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(30px, auto);
     margin-top: 10%;
 }
 
 .button {
-    background-color: aqua;
-    border: 1px solid black;
+    background-color: rgb(207, 207, 207);
+    border: 1px solid rgb(120, 119, 128);
     border-radius: 10px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 500;
@@ -63,11 +81,22 @@ body {
     justify-content: center;
 }
 
-.sign-display {
-    background-color: aliceblue;
-    border: 1px solid black;
-    border-top: none;
-    flex: .10;
-    margin: 0 0 auto;
-    text-align: right;
+.period {
+    background-color: rgb(181, 177, 177);
+}
+.special.clear {
+    background-color: rgb(212, 78, 78);
+    grid-column: 1/3;
+}
+
+.equals {
+    grid-column: 3/5;
+}
+
+.special {
+    background-color: rgb(181, 177, 177);
+}
+
+.backspace {
+    background-color: rgb(212, 78, 78);
 }
