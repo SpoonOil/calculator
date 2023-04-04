@@ -76,10 +76,8 @@ function roundNumber(num) {
 
 //TODO: ALLOW KEYBOARD INPUT
 
-//TODO: ALLOW BACKSPACE
 function buttonPressed(button, type) {
     const buttonPressed = button.target;
-    console.log(buttonPressed)
 
     if (type == 'special') {
         lastPressed = 'special';
@@ -142,7 +140,6 @@ function clearAll() {
     updateDisplay();
 }
 
-// TODO: ALLOW FUNCTION CHAINING
 function compute() {
     inputString = roundNumber(evaluate(+input.a, +input.b, input.operator));
     updateDisplay();
@@ -171,7 +168,6 @@ function multiply(a, b) {
     return a*b;
 }
 
-//TODO: ADD DECIMAL SUPPORT
 function evaluate(a, b, operator) {
     let result;
     switch (operator) {
