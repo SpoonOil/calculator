@@ -21,12 +21,12 @@ body {
 
 .calculator-wrap {
     flex: 1 1 220px;;
-    height: 70%;
+    height: 60%;
     display: flex;;
 }
 
 .calc-spacer {
-    flex: 5 5 auto;
+    flex: 4 4 auto;
 }
 
 .calculator {
