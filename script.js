@@ -124,7 +124,9 @@ function buttonPressed(button, type) {
         inputString ='';
         updateDisplay();
     }
-    inputString += buttonPressed.textContent
+    if (inputString.length< 9) {
+        inputString += buttonPressed.textContent
+    }
     lastPressed = 'number'
     updateDisplay();
     return;
